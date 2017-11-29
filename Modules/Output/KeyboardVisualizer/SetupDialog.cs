@@ -22,7 +22,7 @@ namespace VixenModules.Output.KeyboardVisualizer
 			_data = data;
 
             checkBox1.Checked = _data.UseUDP;
-            checkBox2.Checked = _data.XmasMode;
+            checkBox3.Checked = _data.XmasMode;
 
             if (_data.UseUDP)
             {    
@@ -68,7 +68,7 @@ namespace VixenModules.Output.KeyboardVisualizer
                 _data.Parity = _serialPort.Parity;
                 _data.PortName = _serialPort.PortName;
                 _data.StopBits = _serialPort.StopBits;
-                _data.XmasMode = checkBox2.Checked;
+                _data.XmasMode = checkBox3.Checked;
             }
         }
 
